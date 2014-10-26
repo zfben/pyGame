@@ -32,13 +32,13 @@ class TrainingGround:
 
           current.status_panel()
 
-          ui.mes('Shion', ['Lv means level, it will upgrade when your exp is full.', 'Hp is your health and you will die if your hp is zero.', 'Sp is your mana, and you can use it to cast spells.', 'Atk is your normal attack damage. Matk is your spell damage.', 'Str is strong, each point can increase max hp and atk.', 'Int is intelligence, each point can increase max sp and matk.', 'Your str and int will increase randomly after you level up.'])
+          ui.mes('Shion', ['Lv means level, it will upgrade when your exp is full.', 'Hp is your health and you will die if your hp is zero.', 'Atk is your normal attack damage. Matk is your spell damage.', 'Str is strong, each point can increase max hp and atk.', 'Int is intelligence, each point can increase matk.', 'Your str and int will increase randomly after you level up.'])
 
-          ui.mes('Shion', 'Now I will increase your exp, then you can add your status points.')
+          ui.mes('Shion', 'Now I will increase your exp, then you can see your status panel.')
 
           ui.wait()
 
-          current.add_exp(11)
+          current.add_exp(110)
 
           current.status_panel()
 
@@ -85,8 +85,7 @@ class TrainingGround:
           ui.mes('Cecil', 'Now I will give you some gifts.')
 
           ui.wait()
-          current.add_item([['Red Potion', 10], ['Knife', 1]])
-          current.add_zeny(100)
+          current.add_item([['Knife', 1]])
 
           while not current.has_equiped('Knife'):
             ui.mes('Cecil', ['Now you can open your bag to see the gifts.', 'And try to ' + ui.green('equip Knife') + '.'])

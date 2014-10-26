@@ -9,6 +9,7 @@ from ui import *
 import item
 import mob
 import map
+import skill
 
 class Player(object):
   def __init__(self):
@@ -22,7 +23,6 @@ class Player(object):
     self.map = 'Prontera'
     self.items = {
       'HP Healing': {},
-      'SP Healing': {},
       'Weapon': {}
     }
     self.equipments = {
@@ -34,52 +34,56 @@ class Player(object):
       'min_matk': 0,
       'max_matk': 0
     }
+    self.skills = {}
+    self.status = {}
     self.hp = self.mhp()
-    self.sp = self.msp()
 
   def lv(self):
-    if self.exp < 10:
+    if self.exp < 100:
       return 1
     else:
-      return int(math.sqrt(self.exp / 10) + 1)
+      return int(math.sqrt(self.exp / 100) + 1)
   
   def mhp(self):
-    return int((self.lv() + self.str) * 10)
-
-  def msp(self):
-    return int((self.lv() + self.str) * 5)
+    return int((self.lv() + self.str) * 20)
 
   def min_atk(self):
-    return self.lv()
+    return int(self.lv() + self.equipments_status['min_atk'])
 
   def max_atk(self):
-    return int(self.lv() + self.str)
+    return int(self.lv() + self.str + self.equipments_status['max_atk'])
 
   def atk(self):
     return randrange(self.min_atk(), self.max_atk())
 
   def min_matk(self):
-    return int(self.lv() + self.int)
+    return int(self.lv() + self.int * 2 + self.equipments_status['min_matk'])
 
   def max_matk(self):
-    return int(self.lv() + self.int * 2)
+    return int((self.lv() + self.int) * 2 + self.equipments_status['max_matk'])
+
+  def matk(self):
+    return randrange(self.min_matk(), self.max_matk())
 
   def current_exp(self):
-    return int(self.exp - ((self.lv() - 1) ** 2) * 10)
+    return int(self.exp - ((self.lv() - 1) ** 2) * 100)
 
   def next_exp(self):
-    return int(((self.lv()) ** 2) * 10)
+    return int(((self.lv()) ** 2) * 100)
 
   def status_panel(self):
     ui.mes(self.name, 'Status Panel Opened.')
     print '============================='
     print self.name + ' Lv.' + str(self.lv())
     print 'Exp ' + str(self.current_exp()) + '/' + str(self.next_exp())
-    print 'HP ' + str(self.hp) + '/' + str(self.mhp()) + '  SP ' + str(self.sp) + '/' + str(self.msp())
+    print 'HP ' + str(self.hp) + '/' + str(self.mhp())
     print 'Atk ' + str(self.min_atk()) + ' + ' + str(self.equipments_status['min_atk']) + ' ~ ' + str(self.max_atk()) + ' + ' + str(self.equipments_status['max_atk'])
     print 'Matk ' + str(self.min_matk()) + ' + ' + str(self.equipments_status['min_matk']) + ' ~ ' + str(self.max_matk()) + ' + ' + str(self.equipments_status['max_matk'])
     print 'Str ' + str(self.str) + '  Int ' + str(self.int)
     print 'Zeny ' + str(self.zeny)
+    print '----------- Skills ----------'
+    for name, lv in self.skills.iteritems():
+      print name + ' Lv.' + str(lv) + ' | ' + skill.List[name]['tip']
     print '============================='
 
   def has_npc(self, names):
@@ -102,8 +106,22 @@ class Player(object):
         else:
           self.int += 1
       self.hp = self.mhp()
-      self.sp = self.msp()
       ui.mes(self.name, ui.green('Level up!'), False)
+      self.status_panel()
+
+  def add_skill(self, skill_name):
+    if skill_name in self.skills:
+      self.skills[skill_name] += 1
+    else:
+      self.skills[skill_name] = 1
+    ui.mes(self.name, 'I learned ' + ui.green(skill_name + ' Lv.' + str(self.skills[skill_name])) + '.', False)
+
+  def has_item(self, items):
+    for _item in items:
+      item_type = item.List[_item[0]]['type']
+      if _item[0] not in self.items[item_type] or self.items[item_type][_item[0]] < _item[1]:
+        return False
+    return True
 
   def add_item(self, items):
     for _item in items:
@@ -168,52 +186,19 @@ class Player(object):
           heal = self.mhp() - self.hp
         self.hp += heal
         ui.mes(self.name, 'Used 1 ' + name + ' to heal ' + ui.green(str(heal)) + ' HP. [' + str(self.hp) + '/' + str(self.mhp()) + ']', False)
-      elif key == 'sp':
-        heal = randrange(value[0], value[1])
-        if self.sp + heal > self.msp():
-          heal = self.msp() - self.sp
-        self.sp += heal
-        ui.mes(self.name, 'Used 1 ' + name + ' to heal ' + ui.green(str(heal)) + ' SP. [' + str(self.sp) + '/' + str(self.msp()) + ']', False)
 
   def bag_panel(self):
     ui.mes(self.name, 'Bag Panel Opened.')
-    print '============================='
-    for name, num in self.items['HP Healing'].iteritems():
-      print name + ' x' + str(num) + ' | ' + item.List[name]['tip']
-    for name, num in self.items['SP Healing'].iteritems():
-      print name + ' x' + str(num) + ' | ' + item.List[name]['tip']
+    print '========= Unequiped ========='
+    print 'Weapon:'
     for name, num in self.items['Weapon'].iteritems():
       print name + ' x' + str(num) + ' | ' + item.List[name]['tip']
     print '---------- Equiped ----------'
     if self.equipments['Weapon'] != '':
       print '[Weapon] ' + self.equipments['Weapon'] + ' | ' + item.List[self.equipments['Weapon']]['tip']
     print '============================='
-    ans = ui.menu(self.name, ['Close bag.', 'Use healing items.', 'Use equipments.'])
+    ans = ui.menu(self.name, ['Close bag.', 'Use equipments.'])
     if ans == 1:
-      menu = ['Return.']
-      _menu = ['Return']
-      if self.hp < self.mhp():
-        ui.mes(self.name, 'My HP is ' + str(self.hp) + '/' + str(self.mhp()), False)
-        for name, num in self.items['HP Healing'].iteritems():
-          menu.append('Use 1 ' + name + ' to heal HP. [' + item.List[name]['tip'] + ']')
-          _menu.append(name)
-      if self.sp < self.msp():
-        ui.mes(self.name, 'My SP is ' + str(self.sp) + '/' + str(self.msp()), False)
-        for name, num in self.items['SP Healing'].iteritems():
-          menu.append('Use 1 ' + name + ' to heal SP. [' + item.List[name]['tip'] + ']')
-          _menu.append(name)
-      if len(menu) > 1:
-        anss = ui.menu(self.name, menu)
-        if anss == 0:
-          self.bag_panel()
-        else:
-          self.use_item(_menu[anss])
-          self.bag_panel()
-      else:
-        ui.mes(self.name, 'I am very healthy.')
-        ui.wait()
-        self.bag_panel()
-    elif ans == 2:
       if len(self.items['Weapon'].keys()) > 0:
         menu = ['Return.']
         equipments = []
@@ -239,7 +224,7 @@ class Player(object):
       ui.mes(self.name, ['I dead.', 'I will revive at ' + self.save + '.'])
       ui.wait()
       self.hp = self.mhp()
-      self.sp = self.msp()
+      self.status = {}
       self.warp(self.save)
     else:
       _mob.dead(self)

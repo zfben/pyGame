@@ -1,47 +1,31 @@
 # coding=UTF-8
 
 List = {
-  'Red Potion': {
-    'type': 'HP Healing',
-    'tip': 'Heal 10 ~ 15 HP',
-    'price': 10,
-    'status': {
-      'hp': [10, 15]
-    }
-  },
-  'Blue Potion': {
-    'type': 'SP Healing',
-    'tip': 'Heal 10 ~ 15 SP',
-    'price': 50,
-    'status': {
-      'sp': [10, 15]
-    }
-  },
   'Knife': {
     'type': 'Weapon',
-    'tip': 'Atk + 1 ~ 2',
-    'price': 100,
+    'tip': 'Atk + 10 ~ 17',
+    'price': 50,
     'status': {
-      'min_atk': 1,
-      'max_atk': 2
+      'min_atk': 10,
+      'max_atk': 17
     }
   },
   'Cutter': {
     'type': 'Weapon',
-    'tip': 'Atk + 2 ~ 3',
-    'price': 200,
+    'tip': 'Atk + 30 ~ 40',
+    'price': 1250,
     'status': {
-      'min_atk': 2,
-      'max_atk': 3
+      'min_atk': 30,
+      'max_atk': 40
     }
   },
   'Main Gauche': {
     'type': 'Weapon',
-    'tip': 'Atk + 4 ~ 6',
-    'price': 500,
+    'tip': 'Atk + 43 ~ 50',
+    'price': 2400,
     'status': {
-      'min_atk': 4,
-      'max_atk': 6
+      'min_atk': 43,
+      'max_atk': 50
     }
   }
 }

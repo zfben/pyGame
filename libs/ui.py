@@ -12,15 +12,15 @@ class ui:
 
   @staticmethod
   def blue(msg):
-    return bcolors.OKBLUE + msg + bcolors.ENDC
+    return bcolors.OKBLUE + str(msg) + bcolors.ENDC
 
   @staticmethod
   def green(msg):
-    return bcolors.OKGREEN + msg + bcolors.ENDC
+    return bcolors.OKGREEN + str(msg) + bcolors.ENDC
 
   @staticmethod
   def yellow(msg):
-    return bcolors.WARNING + msg + bcolors.ENDC
+    return bcolors.WARNING + str(msg) + bcolors.ENDC
 
   @staticmethod
   def wait():

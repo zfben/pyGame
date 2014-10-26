@@ -3,26 +3,157 @@
 import sys
 from random import randrange
 from ui import *
+import core
 import npc
+import mob
 import item
 
 List = {
   'Prontera': {
-    'type': 'town',
     'npcs': {
       'Healing Dealer': True,
       'Weapon Dealer': True,
-      'Recycler': True
+      'Recycler': True,
+      'Cecily': True
     },
-    'warps': ['Prontera South Field']
+    'warps': ['Prontera West Field', 'Prontera South Field']
   },
-  'Prontera South Field':{
-    'type': 'field',
+  'Prontera West Field': {
     'mobs': [
-      ['Poring', 60],
-      ['Lunatic', 40]
+      ['Poring', 30],
+      ['Lunatic', 30],
+      ['Fabre', 20],
+      ['Hornet', 10],
+      ['Pupa', 10]
     ],
-    'warps': ['Prontera']
+    'warps': ['Prontera', 'Prontera Southwest Field', 'Prontera Culvert 1']
+  },
+  'Prontera South Field': {
+    'mobs': [
+      ['Poring', 20],
+      ['Lunatic', 30],
+      ['Fabre', 40],
+      ['Pupa', 10]
+    ],
+    'warps': ['Prontera', 'Prontera Southwest Field', 'Izlude West Field']
+  },
+  'Prontera Southwest Field': {
+    'mobs': [
+      ['Poring', 10],
+      ['Savage Babe', 30],
+      ['Rocker', 60]
+    ],
+    'warps': ['Prontera South Field', 'Prontera West Field']
+  },
+  'Prontera Culvert 1': {
+    'mobs': [
+      ['Thief Bug', 30],
+      ['Tarou', 30],
+      ['Familiar', 30],
+      ['Thief Bug Egg', 10]
+    ],
+    'warps': ['Prontera West Field', 'Prontera Culvert 2']
+  },
+  'Prontera Culvert 2': {
+    'mobs': [
+      ['Thief Bug', 20],
+      ['Tarou', 20],
+      ['Spore', 20],
+      ['Plankton', 20],
+      ['Familiar', 10],
+      ['Thief Bug Egg', 10]
+    ],
+    'warps': ['Prontera Culvert 1', 'Prontera Culvert 3']
+  },
+  'Prontera Culvert 3': {
+    'mobs': [
+      ['Tarou', 20],
+      ['Poison Spore', 30],
+      ['Plankton', 30],
+      ['Thief Bug', 10],
+      ['Familiar', 10]
+    ],
+    'warps': ['Prontera Culvert 2', 'Prontera Culvert 4']
+  },
+  'Prontera Culvert 4': {
+    'mobs': [
+      ['Female Thief Bug', 30],
+      ['Male Thief Bug', 30],
+      ['Drainliar', 20],
+      ['Cramp', 20]
+    ],
+    'warps': ['Prontera Culvert 3']
+  },
+  'Izlude': {
+    'npcs': {
+      'Healing Dealer': True,
+      'Weapon Dealer': True,
+      'Recycler': True,
+      'Joffrey': True
+    },
+    'warps': ['Izlude West Field']
+  },
+  'Izlude West Field': {
+    'mobs': [
+      ['Lunatic', 30],
+      ['Fabre', 60],
+      ['Poring', 10]
+    ],
+    'warps': ['Izlude', 'Prontera South Field']
+  },
+  'Byalan Island': {
+    'warps': ['Izlude', 'Undersea Tunnel 1']
+  },
+  'Undersea Tunnel 1': {
+    'mobs': [
+      ['Hydra', 20],
+      ['Kukre', 20],
+      ['Marina', 20],
+      ['Vadon', 20],
+      ['Plankton', 20]
+    ],
+    'warps': ['Byalan Island', 'Undersea Tunnel 2']
+  },
+  'Undersea Tunnel 2': {
+    'mobs': [
+      ['Hydra', 10],
+      ['Kukre', 10],
+      ['Marina', 20],
+      ['Vadon', 20],
+      ['Plankton', 20],
+      ['Cornutus', 20]
+    ],
+    'warps': ['Undersea Tunnel 1', 'Undersea Tunnel 3']
+  },
+  'Undersea Tunnel 3': {
+    'mobs': [
+      ['Marse', 20],
+      ['Obeaune', 20],
+      ['Marina', 20],
+      ['Merman', 20],
+      ['Cornutus', 20]
+    ],
+    'warps': ['Undersea Tunnel 2', 'Undersea Tunnel 4']
+  },
+  'Undersea Tunnel 4': {
+    'mobs': [
+      ['Marse', 20],
+      ['Swordfish', 20],
+      ['Marine Sphere', 20],
+      ['Merman', 20],
+      ['Phen', 20]
+    ],
+    'warps': ['Undersea Tunnel 3', 'Undersea Tunnel 5']
+  },
+  'Undersea Tunnel 5': {
+    'mobs': [
+      ['Strouf', 20],
+      ['Swordfish', 20],
+      ['Deviace', 20],
+      ['Merman', 20],
+      ['Phen', 20]
+    ],
+    'warps': ['Undersea Tunnel 4']
   }
 }
 
@@ -44,13 +175,16 @@ class Map(object):
         elif npc_type == 'Recycler':
           self.menu.append('Sell items to ' + key + '.')
 
+        elif npc_type == 'Quest':
+          self.menu.append('Talk with ' + key + '.')
+
     if 'mobs' in List[name]:
       self.menu.append('Find monsters.')
       self._menu.append(['Find monsters.', 'Find Mobs'])
 
     if 'warps' in List[name]:
       for name in List[name]['warps']:
-        self.menu.append('Warp to ' + name)
+        self.menu.append('Go to ' + name)
         self._menu.append([name, 'Warp'])
 
     ui.mes(player.name, 'I want to ..')
@@ -113,17 +247,13 @@ class Map(object):
         self.player.del_item([[_item[0], num]])
         self.player.add_zeny(item.List[_item[0]]['price'] / 2 * num)
 
-    elif self._menu[ans][1] == 'Find Mobs':
-      rand = randrange(100)
-      _mob = ''
-      cur_num = 0
-      for data in List[self.name]['mobs']:
-        cur_num += data[1]
-        if rand < cur_num:
-          _mob = data[0]
-          break
+    elif self._menu[ans][1] == 'Quest':
+      npc.quest(self._menu[ans][0], self.player)
 
-      ui.mes(self.player.name, 'Find a ' + ui.green(_mob) + '!')
+    elif self._menu[ans][1] == 'Find Mobs':
+      _mob = core.rand(List[self.name]['mobs'])[0]
+
+      ui.mes(self.player.name, 'Find a ' + ui.green(_mob + ' Lv.' + str(mob.List[_mob]['lv'])) + ' !')
       anss = ui.menu(self.player.name, ['Attack!', 'Run away!'])
       if anss == 0:
         self.player.attack_mob(_mob)
