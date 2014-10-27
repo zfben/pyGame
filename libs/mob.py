@@ -304,15 +304,15 @@ class Mob:
           if target.hp == 0:
             break
 
+    skill_data = []
     if isinstance(source, Mob) and 'skills' in List[source.name]:
       skill_data = core.rand(List[source.name]['skills'])
-      if len(skill_data) > 0:
+    elif isinstance(source, player.Player) and len(source.skills.keys()) > 0 and randrange(100) < (source.int / float(source.int + source.str) * 100):
+      name = source.skills.keys()[randrange(len(source.skills.keys()))]
+      skill_data = [name, 0, source.skills[name]]
+    if len(skill_data) > 0:
+      if skill_data[0] != 'Heal' or source.hp != source.mhp():
         skill.use(skill_data[0], skill_data[2], source, target)
-        return
-    elif isinstance(source, player.Player) and len(source.skills.keys()) > 0:
-      if randrange(100) < (source.int / float(source.int + source.str) * 50):
-        name = source.skills.keys()[randrange(len(source.skills.keys()))]
-        skill.use(name, source.skills[name], source, target)
         return
 
     dmg = source.atk()

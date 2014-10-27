@@ -1,1 +1,1478 @@
-{}
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"sta",
+				"status"
+			],
+			[
+				"sk",
+				"skill_name"
+			],
+			[
+				"skil",
+				"skills"
+			],
+			[
+				"itm",
+				"items"
+			],
+			[
+				"ski",
+				"skill_lv"
+			],
+			[
+				"pan",
+				"panel"
+			],
+			[
+				"no",
+				"_normal_attack"
+			],
+			[
+				"ran",
+				"randrange"
+			],
+			[
+				"l",
+				"List"
+			],
+			[
+				"np",
+				"npcs"
+			],
+			[
+				"it",
+				"item"
+			],
+			[
+				"Re",
+				"Return"
+			],
+			[
+				"add",
+				"add_item"
+			],
+			[
+				"eq",
+				"equipments"
+			],
+			[
+				"ar",
+				"archive"
+			],
+			[
+				"is",
+				"is_archived"
+			],
+			[
+				"npc",
+				"npc_type"
+			],
+			[
+				"we",
+				"Weapon"
+			],
+			[
+				"Equ",
+				"equipments"
+			],
+			[
+				"rag",
+				"randrange"
+			],
+			[
+				"map",
+				"map_name"
+			],
+			[
+				"en",
+				"ENDC"
+			],
+			[
+				"wa",
+				"WARNING"
+			],
+			[
+				"Tra",
+				"TrainingGround"
+			],
+			[
+				"imp",
+				"import"
+			],
+			[
+				"__",
+				"__dict__"
+			],
+			[
+				"item",
+				"item_type"
+			],
+			[
+				"cur",
+				"current_exp"
+			],
+			[
+				"at",
+				"atk"
+			],
+			[
+				"max",
+				"max_atk"
+			],
+			[
+				"min",
+				"min_atk"
+			],
+			[
+				"mob",
+				"mob_name"
+			],
+			[
+				"pal",
+				"player"
+			],
+			[
+				"not",
+				"nothing"
+			],
+			[
+				"bag",
+				"bag_panel"
+			],
+			[
+				"ite",
+				"iteritems"
+			],
+			[
+				"st",
+				"str"
+			],
+			[
+				"ok",
+				"OKGREEN"
+			],
+			[
+				"len",
+				"length"
+			],
+			[
+				"pr",
+				"print"
+			],
+			[
+				"al",
+				"alipay_paid_at"
+			],
+			[
+				"ap",
+				"alipay_id"
+			],
+			[
+				"from",
+				"from_user_id"
+			],
+			[
+				"tes",
+				"testing_id"
+			],
+			[
+				"Rec",
+				"RechargeStatus"
+			],
+			[
+				"incom",
+				"income_success"
+			],
+			[
+				"paid",
+				"PAID"
+			],
+			[
+				"R",
+				"RechargeStatus"
+			],
+			[
+				"pay",
+				"payable"
+			],
+			[
+				"su",
+				"SUCCESS"
+			],
+			[
+				"Pay",
+				"PaymentLogStatus"
+			],
+			[
+				"Pa",
+				"PaymentLogStatus"
+			],
+			[
+				"las",
+				"last_data"
+			],
+			[
+				"pri",
+				"price"
+			],
+			[
+				"user",
+				"user_id"
+			],
+			[
+				"app",
+				"application"
+			],
+			[
+				"res",
+				"response"
+			],
+			[
+				"par",
+				"params"
+			],
+			[
+				"trn",
+				"transform"
+			],
+			[
+				"ver",
+				"version"
+			],
+			[
+				"reser",
+				"reservations"
+			],
+			[
+				"ri",
+				"right"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"C",
+				"ChinaSMS"
+			],
+			[
+				"fil",
+				"filter"
+			],
+			[
+				"data",
+				"data"
+			],
+			[
+				"sub",
+				"subject"
+			],
+			[
+				"ge",
+				"get_phone_token_user_path"
+			],
+			[
+				"pho",
+				"phone_confirmed_at"
+			],
+			[
+				"ph",
+				"phone_confirmed_at"
+			],
+			[
+				"home",
+				"home_user_path"
+			],
+			[
+				"ui",
+				"ui-page-active"
+			],
+			[
+				"index",
+				"indexOf"
+			],
+			[
+				"ref",
+				"referral_to"
+			],
+			[
+				"visi",
+				"visit"
+			],
+			[
+				"sc",
+				"scenario"
+			],
+			[
+				"req",
+				"request"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "libs/mob.py",
+			"settings":
+			{
+				"buffer_size": 6083,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "libs/item.py",
+			"settings":
+			{
+				"buffer_size": 481,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "libs/core.py",
+			"settings":
+			{
+				"buffer_size": 214,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "libs/player.py",
+			"settings":
+			{
+				"buffer_size": 8143,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "libs/map.py",
+			"settings":
+			{
+				"buffer_size": 7027,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "libs/npc.py",
+			"settings":
+			{
+				"buffer_size": 2517,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "libs/skill.py",
+			"settings":
+			{
+				"buffer_size": 1473,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "libs/ui.py",
+			"settings":
+			{
+				"buffer_size": 1316,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"sas",
+				"Set Syntax: Sass"
+			],
+			[
+				"ru",
+				"Set Syntax: Ruby"
+			],
+			[
+				"sass",
+				"Set Syntax: Sass"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/ben/dev/pyGame",
+		"/Users/ben/dev/pyGame/archives",
+		"/Users/ben/dev/pyGame/libs"
+	],
+	"file_history":
+	[
+		"/Users/ben/dev/pyGame/libs/training_ground.py",
+		"/Users/ben/dev/pyGame/libs/player.py",
+		"/Users/ben/dev/pyGame/libs/__init__.py",
+		"/Users/ben/dev/pyGame/archives/.gitkeep",
+		"/Users/ben/dev/pyGame/main.py",
+		"/Users/ben/dev/pyGame/.gitignore",
+		"/Users/ben/dev/pyGame/map.py",
+		"/Users/ben/dev/pyGame/mob.py",
+		"/Users/ben/dev/pyGame/player.py",
+		"/Users/ben/dev/pyGame/item.py",
+		"/Users/ben/dev/pyGame/ui.py",
+		"/Users/ben/dev/pyGame/item.pyc",
+		"/Users/ben/dev/jiandanxinli/app/controllers/application_controller.rb",
+		"/Users/ben/dev/jiandanxinli/app/helpers/application_helper.rb",
+		"/Users/ben/dev/jiandanxinli/app/models/ability.rb",
+		"/Users/ben/dev/jiandanxinli/app/views/users/verify_doctor.slim",
+		"/Users/ben/dev/jiandanxinli/config/puma.rb",
+		"/Users/ben/dev/jiandanxinli/app/views/admin/recharges/pay.slim",
+		"/Users/ben/dev/jiandanxinli/app/views/reservation_time_roles/_form.slim",
+		"/Users/ben/dev/jiandanxinli/app/views/service_mailer/reservation_waiting_for_expert.slim",
+		"/Users/ben/dev/jiandanxinli/app/admin/reservation.rb",
+		"/Users/ben/dev/jiandanxinli/app/models/reservation.rb",
+		"/Users/ben/dev/jiandanxinli/config/routes.rb",
+		"/Users/ben/dev/jiandanxinli/app/controllers/reservations_controller.rb",
+		"/Users/ben/dev/jiandanxinli/app/admin/dashboard.rb",
+		"/Users/ben/dev/jiandanxinli/app/models/standard_reservation.rb",
+		"/Users/ben/dev/jiandanxinli/app/admin/recharge.rb",
+		"/Users/ben/dev/jiandanxinli/app/models/concerns/payable.rb",
+		"/Users/ben/dev/jiandanxinli/spec/factories/payment_logs.rb",
+		"/Users/ben/dev/jiandanxinli/app/admin/statistics.rb",
+		"/Users/ben/dev/jiandanxinli/db/schema.rb",
+		"/Users/ben/dev/jiandanxinli/app/models/recharge.rb",
+		"/Users/ben/dev/jiandanxinli/app/views/service_mailer/reservation_payment.slim",
+		"/Users/ben/dev/jiandanxinli/app/mailers/service_mailer.rb",
+		"/Users/ben/dev/jiandanxinli/config/secrets.yml",
+		"/Users/ben/dev/jiandanxinli/spec/features/devise_spec.rb",
+		"/Users/ben/dev/jiandanxinli/app/admin/admin_user.rb",
+		"/Users/ben/dev/jiandanxinli/spec/features/standard_reservations_spec.rb",
+		"/Users/ben/dev/jiandanxinli/Gemfile",
+		"/Users/ben/dev/jiandanxinli/app/views/recharges/show.slim",
+		"/Users/ben/dev/jiandanxinli/app/models/paid_call.rb",
+		"/Users/ben/dev/jiandanxinli/app/models/concerns/tagable.rb",
+		"/Users/ben/dev/jiandanxinli/app/views/admin/reservations/pay.slim",
+		"/Users/ben/dev/jiandanxinli/app/models/tagging.rb",
+		"/Users/ben/dev/jiandanxinli/db/migrate/20141021172617_add_targetable_to_recharge.rb",
+		"/Users/ben/dev/jiandanxinli/app/admin/transaction.rb",
+		"/Users/ben/dev/jiandanxinli/app/models/user.rb",
+		"/Users/ben/dev/jiandanxinli/app/controllers/reservation_times_controller.rb",
+		"/Users/ben/dev/jiandanxinli/wercker.yml",
+		"/Users/ben/dev/jiandanxinli/app/admin/paid_call.rb",
+		"/Users/ben/dev/jiandanxinli/app/assets/stylesheets/pages.sass",
+		"/Users/ben/dev/jiandanxinli/app/views/testings/_testing.slim",
+		"/Users/ben/dev/jiandanxinli/app/controllers/testing_logs_controller.rb",
+		"/Users/ben/dev/jiandanxinli/app/controllers/recharges_controller.rb",
+		"/Users/ben/dev/jiandanxinli/app/views/recharges/new.slim",
+		"/Users/ben/dev/jiandanxinli/app/controllers/pages_controller.rb",
+		"/Users/ben/dev/jiandanxinli/config/deploy.rb",
+		"/Users/ben/dev/jiandanxinli/app/views/reservation_messages/renewal.slim",
+		"/Users/ben/dev/jiandanxinli/app/views/tags/_tag.slim",
+		"/Users/ben/dev/jiandanxinli/app/views/reservation_times/_reservation_time.slim",
+		"/Users/ben/dev/jiandanxinli/app/controllers/testings_controller.rb",
+		"/Users/ben/dev/jiandanxinli/app/admin/testing.rb",
+		"/Users/ben/dev/jiandanxinli/app/views/testing_logs/index.slim",
+		"/Users/ben/dev/jiandanxinli/app/admin/testing_log.rb",
+		"/Users/ben/dev/jiandanxinli/app/assets/javascripts/application.coffee",
+		"/Users/ben/dev/jiandanxinli/config/locales/models.yml",
+		"/Users/ben/dev/jiandanxinli/spec/models/recharge_spec.rb",
+		"/Users/ben/dev/jiandanxinli/app/serializers/recharge_serializer.rb",
+		"/Users/ben/dev/jiandanxinli/app/admin/delayed_job.rb",
+		"/Users/ben/dev/jiandanxinli/app/views/recharges/index.slim",
+		"/Users/ben/dev/jiandanxinli/db/migrate/20140924122030_rename_hungup_status_in_users.rb",
+		"/Users/ben/dev/jiandanxinli/app/views/service_mailer/new_recharge.slim",
+		"/Users/ben/dev/jiandanxinli/app/controllers/payment_logs_controller.rb",
+		"/Users/ben/dev/jiandanxinli/app/models/payment_log.rb",
+		"/Users/ben/dev/jiandanxinli/app/controllers/questions_controller.rb",
+		"/Users/ben/dev/jiandanxinli/app/controllers/posts_controller.rb",
+		"/Users/ben/dev/jiandanxinli/app/views/layouts/application.slim",
+		"/Users/ben/dev/jiandanxinli/app/views/payment_logs/show.slim",
+		"/Users/ben/dev/jiandanxinli/app/serializers/payment_log_serializer.rb",
+		"/Users/ben/dev/jiandanxinli/app/views/pages/home.slim",
+		"/Users/ben/dev/jiandanxinli/config/helper.yml",
+		"/Users/ben/dev/jiandanxinli/app/models/message.rb",
+		"/Users/ben/dev/jiandanxinli/config/initializers/mail.rb",
+		"/Users/ben/dev/jiandanxinli/config/initializers/serializer.rb",
+		"/Users/ben/dev/jiandanxinli/app/views/application/_flash.slim",
+		"/Users/ben/dev/jiandanxinli/spec/factories/withdraws.rb",
+		"/Users/ben/dev/jiandanxinli/config/initializers/wrap_parameters.rb",
+		"/Users/ben/dev/jiandanxinli/spec/factories/messages.rb",
+		"/Users/ben/dev/jiandanxinli/app/assets/stylesheets/application.sass",
+		"/Users/ben/dev/jiandanxinli/app/controllers/paid_calls_controller.rb",
+		"/Users/ben/dev/jiandanxinli/app/views/layouts/devise.slim",
+		"/Users/ben/dev/jiandanxinli/config/locales/zh-CN.yml",
+		"/Users/ben/dev/jiandanxinli/app/controllers/users_controller.rb",
+		"/Users/ben/dev/jiandanxinli/app/controllers/tags_controller.rb",
+		"/Users/ben/dev/jiandanxinli/app/controllers/transactions_controller.rb",
+		"/Users/ben/dev/jiandanxinli/app/controllers/yun_tong_xun_controller.rb",
+		"/Users/ben/dev/jiandanxinli/app/controllers/survey_logs_controller.rb",
+		"/Users/ben/dev/jiandanxinli/app/controllers/reservation_time_roles_controller.rb",
+		"/Users/ben/dev/jiandanxinli/app/controllers/followings_controller.rb",
+		"/Users/ben/dev/jiandanxinli/app/controllers/answers_controller.rb",
+		"/Users/ben/dev/jiandanxinli/app/enumerations/payment_log_type.rb",
+		"/Users/ben/dev/jiandanxinli/app/admin/payment_log.rb",
+		"/Users/ben/dev/jiandanxinli/Capfile",
+		"/Users/ben/dev/jiandanxinli/app/views/users/counselor_agreement.slim",
+		"/Users/ben/dev/jiandanxinli/app/assets/stylesheets/content.sass",
+		"/Users/ben/dev/jiandanxinli/app/uploaders/ckeditor_picture_uploader.rb",
+		"/Users/ben/dev/jiandanxinli/app/admin/question.rb",
+		"/Users/ben/dev/jiandanxinli/app/views/question_messages/new_question_about_tags.slim",
+		"/Users/ben/dev/jiandanxinli/app/views/questions/index.slim",
+		"/Users/ben/dev/jiandanxinli/app/views/reservations/change_time.slim",
+		"/Users/ben/dev/jiandanxinli/app/views/reservation_messages/change_time.slim",
+		"/Users/ben/dev/jiandanxinli/app/enumerations/recharge_status.rb",
+		"/Users/ben/dev/jiandanxinli/config/initializers/china_sms.rb",
+		"/Users/ben/dev/jiandanxinli/spec/models/payment_log_spec.rb",
+		"/Users/ben/dev/jiandanxinli/app/models/transaction.rb",
+		"/Users/ben/dev/jiandanxinli/app/models/post.rb",
+		"/Users/ben/dev/jiandanxinli/app/admin/post.rb",
+		"/Users/ben/dev/jiandanxinli/spec/factories/posts.rb",
+		"/Users/ben/dev/jiandanxinli/app/assets/stylesheets/posts.sass",
+		"/Users/ben/dev/jiandanxinli/app/admin/reservation_time.rb",
+		"/Users/ben/dev/jiandanxinli/w.rb",
+		"/Users/ben/dev/jiandanxinli/app/admin/withdraw.rb",
+		"/Users/ben/dev/jiandanxinli/app/models/weixin.rb",
+		"/Users/ben/dev/jiandanxinli/app/models/withdraw.rb",
+		"/Users/ben/dev/jiandanxinli/app/admin/user.rb",
+		"/Users/ben/dev/jiandanxinli/db/migrate/20140701121017_create_taggings.rb",
+		"/Users/ben/dev/jiandanxinli/app/enumerations/payment_log_status.rb",
+		"/Users/ben/dev/jiandanxinli/app/admin/tag.rb"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"      'Healing Dealer': True,",
+			"db['lv']",
+			"msp",
+			"sp",
+			"10",
+			"sword",
+			"hp",
+			"HP",
+			"hp",
+			"ui.",
+			"self.items[item[0]]",
+			"menu",
+			"mes",
+			"current",
+			"current['name']",
+			"self",
+			"hp",
+			"user_name",
+			"current.name",
+			"name",
+			"width",
+			"v2",
+			"tag",
+			"getHttpResponsePOST",
+			", 'data-ajax' => false",
+			"'data-ajax' => false",
+			"data-ajax=\"false\"",
+			"ui-page",
+			"mess",
+			"disabled",
+			"current_user",
+			"user",
+			"get",
+			"options[:password]",
+			"teal",
+			" tiny",
+			"ui ",
+			"reservation",
+			"email",
+			"q.id",
+			".ui",
+			"button",
+			"local",
+			"time.local"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "libs/mob.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6083,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5338,
+								5338
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 4291.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "libs/item.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 481,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								24,
+								24
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "libs/core.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 214,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								147,
+								147
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "libs/player.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8143,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6556,
+								6556
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "libs/map.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7027,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6359,
+								6359
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3203.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "libs/npc.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2517,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								42,
+								42
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "libs/skill.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1473,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								228,
+								232
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "libs/ui.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1316,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								418,
+								418
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "pyGame.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"ui",
+				"libs/ui.py"
+			],
+			[
+				"appcoff",
+				"app/assets/javascripts/application.coffee"
+			],
+			[
+				"appsl",
+				"app/views/layouts/application.slim"
+			],
+			[
+				"reserform",
+				"app/views/reservations/_form.slim"
+			],
+			[
+				"pay",
+				"app/views/admin/recharges/pay.slim"
+			],
+			[
+				"pay.sl",
+				"app/views/admin/recharges/pay.slim"
+			],
+			[
+				"stan",
+				"app/models/standard_reservation.rb"
+			],
+			[
+				"recha",
+				"app/models/recharge.rb"
+			],
+			[
+				"respay",
+				"app/views/service_mailer/reservation_payment.slim"
+			],
+			[
+				"dash",
+				"app/admin/dashboard.rb"
+			],
+			[
+				"apph",
+				"app/helpers/application_helper.rb"
+			],
+			[
+				"rechshow",
+				"app/views/recharges/show.slim"
+			],
+			[
+				"reser",
+				"app/admin/reservation.rb"
+			],
+			[
+				"rech",
+				"app/admin/recharge.rb"
+			],
+			[
+				"apphe",
+				"app/helpers/application_helper.rb"
+			],
+			[
+				"taga",
+				"app/models/concerns/tagable.rb"
+			],
+			[
+				"user",
+				"app/models/user.rb"
+			],
+			[
+				"resecon",
+				"app/controllers/reservations_controller.rb"
+			],
+			[
+				"staressp",
+				"spec/features/standard_reservations_spec.rb"
+			],
+			[
+				"stanre",
+				"app/models/standard_reservation.rb"
+			],
+			[
+				"ge",
+				"Gemfile"
+			],
+			[
+				"pai",
+				"app/models/paid_call.rb"
+			],
+			[
+				"_tes",
+				"app/views/testings/_testing.slim"
+			],
+			[
+				"teslogcon",
+				"app/controllers/testing_logs_controller.rb"
+			],
+			[
+				"appco",
+				"app/controllers/application_controller.rb"
+			],
+			[
+				"telogcon",
+				"app/controllers/testing_logs_controller.rb"
+			],
+			[
+				"tescon",
+				"app/controllers/testings_controller.rb"
+			],
+			[
+				"dep",
+				"config/deploy.rb"
+			],
+			[
+				"gem",
+				"Gemfile"
+			],
+			[
+				"pagec",
+				"app/controllers/pages_controller.rb"
+			],
+			[
+				"rechnew",
+				"app/views/recharges/new.slim"
+			],
+			[
+				"rechcon",
+				"app/controllers/recharges_controller.rb"
+			],
+			[
+				"rechsho",
+				"app/views/recharges/show.slim"
+			],
+			[
+				"rechinde",
+				"app/views/recharges/index.slim"
+			],
+			[
+				"ab",
+				"app/models/ability.rb"
+			],
+			[
+				"rou",
+				"config/routes.rb"
+			],
+			[
+				"paymcon",
+				"app/controllers/payment_logs_controller.rb"
+			],
+			[
+				"targ",
+				"db/migrate/20141021172617_add_targetable_to_recharge.rb"
+			],
+			[
+				"palsh",
+				"app/views/payment_logs/show.slim"
+			],
+			[
+				"abl",
+				"app/models/ability.rb"
+			],
+			[
+				"mess",
+				"app/models/message.rb"
+			],
+			[
+				"mode",
+				"config/locales/models.yml"
+			],
+			[
+				"zh",
+				"config/locales/zh-CN.yml"
+			],
+			[
+				"rechsh",
+				"app/views/recharges/show.slim"
+			],
+			[
+				"cap",
+				"Capfile"
+			],
+			[
+				"quescon",
+				"app/controllers/questions_controller.rb"
+			],
+			[
+				"rechacon",
+				"app/controllers/recharges_controller.rb"
+			],
+			[
+				"rechsl",
+				"app/views/recharges/new.slim"
+			],
+			[
+				"stand",
+				"app/models/standard_reservation.rb"
+			],
+			[
+				"stare",
+				"app/models/standard_reservation.rb"
+			],
+			[
+				"tran",
+				"app/models/transaction.rb"
+			],
+			[
+				"resertim",
+				"app/views/reservation_time_roles/_form.slim"
+			],
+			[
+				"que",
+				"app/views/questions/index.slim"
+			],
+			[
+				"w",
+				"w.rb"
+			],
+			[
+				"gm",
+				"Gemfile"
+			],
+			[
+				"payab",
+				"app/models/concerns/payable.rb"
+			],
+			[
+				"taggin",
+				"app/models/tagging.rb"
+			],
+			[
+				"creatag",
+				"db/migrate/20140701121017_create_taggings.rb"
+			],
+			[
+				"paylog",
+				"db/migrate/20141020132504_create_payment_logs.rb"
+			],
+			[
+				"payme",
+				"app/models/payment_log.rb"
+			],
+			[
+				"ex",
+				"config/initializers/exception_notification.rb"
+			],
+			[
+				"sch",
+				"db/schema.rb"
+			],
+			[
+				"dejob",
+				"spec/support/delayed_job_helper.rb"
+			],
+			[
+				"de",
+				"spec/features/devise_spec.rb"
+			],
+			[
+				"delay",
+				"bin/delayed_job"
+			],
+			[
+				"ckesa",
+				"app/assets/stylesheets/ckeditor.sass"
+			],
+			[
+				"appsa",
+				"app/assets/stylesheets/application.sass"
+			],
+			[
+				"con",
+				"app/assets/stylesheets/content.sass"
+			],
+			[
+				"ckes",
+				"app/assets/stylesheets/ckeditor.sass"
+			],
+			[
+				"v2sl",
+				"app/views/layouts/v2.slim"
+			],
+			[
+				"v2sa",
+				"app/assets/stylesheets/v2.sass"
+			],
+			[
+				"cont",
+				"app/assets/stylesheets/content.sass"
+			],
+			[
+				"ass",
+				"config/initializers/assets.rb"
+			],
+			[
+				"acadms",
+				"app/assets/stylesheets/active_admin.css.sass"
+			],
+			[
+				"messmaisl",
+				"app/views/message_mailer/received_message.slim"
+			],
+			[
+				"resme",
+				"app/messages/reservation_message.rb"
+			],
+			[
+				"stansp",
+				"spec/features/standard_reservations_spec.rb"
+			],
+			[
+				"users",
+				"spec/factories/users.rb"
+			],
+			[
+				"devsp",
+				"spec/features/devise_spec.rb"
+			],
+			[
+				"usercn",
+				"app/controllers/users_controller.rb"
+			],
+			[
+				"userinde",
+				"app/views/users/index.slim"
+			],
+			[
+				"mai",
+				"config/initializers/mail.rb"
+			],
+			[
+				"v2c",
+				"app/assets/javascripts/v2.coffee"
+			],
+			[
+				"reserme",
+				"app/messages/reservation_message.rb"
+			],
+			[
+				"yunt",
+				"app/models/yun_tong_xun.rb"
+			],
+			[
+				"restimro",
+				"app/models/reservation_time_role.rb"
+			],
+			[
+				"a.",
+				"a.rb"
+			],
+			[
+				"yun",
+				"app/models/yun_tong_xun.rb"
+			],
+			[
+				"userind",
+				"app/views/users/index.slim"
+			],
+			[
+				"usercon",
+				"app/controllers/users_controller.rb"
+			],
+			[
+				"home",
+				"app/views/pages/home.slim"
+			],
+			[
+				"prod",
+				"config/environments/production.rb"
+			],
+			[
+				"v2co",
+				"app/assets/javascripts/v2.coffee"
+			],
+			[
+				"homesa",
+				"app/assets/stylesheets/home.sass"
+			],
+			[
+				"pagecon",
+				"app/controllers/pages_controller.rb"
+			],
+			[
+				"page",
+				"app/assets/stylesheets/pages.sass"
+			],
+			[
+				"ro",
+				"config/routes.rb"
+			],
+			[
+				"p",
+				"config/puma.rb"
+			],
+			[
+				"nex",
+				"config/environments/next.rb"
+			],
+			[
+				"pagesa",
+				"app/assets/stylesheets/pages.sass"
+			],
+			[
+				"userhom",
+				"app/views/users/home.slim"
+			],
+			[
+				"homesl",
+				"app/views/pages/home.slim"
+			],
+			[
+				"v2",
+				"app/assets/javascripts/v2.coffee"
+			],
+			[
+				"agr",
+				"app/views/users/agreement.slim"
+			],
+			[
+				"pum",
+				"config/puma.rb"
+			],
+			[
+				"ng",
+				"config/nginx.conf"
+			],
+			[
+				"hep",
+				"config/helper.yml"
+			],
+			[
+				"wi",
+				"app/models/withdraw.rb"
+			],
+			[
+				"res",
+				"app/models/reservation.rb"
+			],
+			[
+				"sta",
+				"app/admin/statistics.rb"
+			],
+			[
+				"resertimfor",
+				"app/views/reservation_time_roles/_form.slim"
+			],
+			[
+				"resetimenew",
+				"app/views/reservation_time_roles/new.slim"
+			],
+			[
+				"tra",
+				"app/admin/transaction.rb"
+			],
+			[
+				"with",
+				"app/models/withdraw.rb"
+			],
+			[
+				"uservis",
+				"app/views/users/_visitor.slim"
+			],
+			[
+				"verdo",
+				"app/views/users/verify_doctor.slim"
+			],
+			[
+				"possa",
+				"app/assets/stylesheets/posts.sass"
+			],
+			[
+				"userexp",
+				"app/views/users/_expert.slim"
+			],
+			[
+				"appcof",
+				"app/assets/javascripts/application.coffee"
+			],
+			[
+				"usersass",
+				"app/assets/stylesheets/users.sass"
+			],
+			[
+				"userin",
+				"app/views/users/index.slim"
+			],
+			[
+				"flash",
+				"app/views/application/_flash.slim"
+			],
+			[
+				"chin",
+				"config/initializers/china_sms.rb"
+			],
+			[
+				"model",
+				"config/locales/models.yml"
+			],
+			[
+				"resersa",
+				"app/assets/stylesheets/reservations.sass"
+			],
+			[
+				"restimcon",
+				"app/controllers/reservation_times_controller.rb"
+			],
+			[
+				"restimsho",
+				"app/views/reservation_times/show.slim"
+			],
+			[
+				"queinde",
+				"app/views/questions/index.slim"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 232.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

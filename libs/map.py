@@ -11,7 +11,6 @@ import item
 List = {
   'Prontera': {
     'npcs': {
-      'Healing Dealer': True,
       'Weapon Dealer': True,
       'Recycler': True,
       'Cecily': True
@@ -86,7 +85,6 @@ List = {
   },
   'Izlude': {
     'npcs': {
-      'Healing Dealer': True,
       'Weapon Dealer': True,
       'Recycler': True,
       'Joffrey': True
