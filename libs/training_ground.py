@@ -40,8 +40,6 @@ class TrainingGround:
 
           current.add_exp(110)
 
-          current.status_panel()
-
           ui.mes('Shion', 'Do you feel better?')
 
           current.npcs['Shion'] = True
