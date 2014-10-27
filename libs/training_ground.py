@@ -32,7 +32,7 @@ class TrainingGround:
 
           current.status_panel()
 
-          ui.mes('Shion', ['Lv means level, it will upgrade when your exp is full.', 'Hp is your health and you will die if your hp is zero.', 'Atk is your normal attack damage. Matk is your spell damage.', 'Str is strong, each point can increase max hp and atk.', 'Int is intelligence, each point can increase matk.', 'Your str and int will increase randomly after you level up.'])
+          ui.mes('Shion', ['Lv means level, it will upgrade when your exp is full.', 'Hp is your health and you will die if your hp is zero.', 'Atk is your normal attack damage. Matk is your spell damage.', 'Str is strong, each point can increase max hp and atk.', 'Int is intelligence, each point can increase matk and probability cast.', 'Your str and int will increase randomly after you level up.'])
 
           ui.mes('Shion', 'Now I will increase your exp, then you can see your status panel.')
 

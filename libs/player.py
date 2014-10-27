@@ -85,6 +85,24 @@ class Player(object):
     for name, lv in self.skills.iteritems():
       print name + ' Lv.' + str(lv) + ' | ' + skill.List[name]['tip']
     print '============================='
+    if ui.menu(self.name, ['Return.', 'Reset Str and Int. Need ' + str(self.lv() * 100) + 'z.']) == 1:
+      if self.zeny < self.lv() * 100:
+        ui.mes(self.name, 'I have not enought money.')
+      else:
+        total = self.str + self.int
+        str_point = raw_input('Set Str as: (Other will be set to Int, range is 1 ~ ' + str(total - 1) + ') ')
+        try:
+          str_point = int(str_point)
+        except Exception, e:
+          str_point = 0
+        if str_point < 1 or str_point > (total - 1):
+          ui.mes(self.name, 'The number is out of range.', False)
+        else:
+          self.del_zeny(self.lv() * 100)
+          self.str = str_point
+          self.int = total - str_point
+          ui.mes(self.name, 'Reset successful.', False)
+          self.status_panel()
 
   def has_npc(self, names):
     result = 0
@@ -197,7 +215,7 @@ class Player(object):
     if self.equipments['Weapon'] != '':
       print '[Weapon] ' + self.equipments['Weapon'] + ' | ' + item.List[self.equipments['Weapon']]['tip']
     print '============================='
-    ans = ui.menu(self.name, ['Close bag.', 'Use equipments.'])
+    ans = ui.menu(self.name, ['Return.', 'Use equipments.'])
     if ans == 1:
       if len(self.items['Weapon'].keys()) > 0:
         menu = ['Return.']
@@ -242,7 +260,6 @@ class Player(object):
     f = open(self._dat_path(), 'r')
     self.__dict__.update(json.loads(base64.b64decode(f.read())))
     f.close()
-    self.status_panel()
     print ui.yellow('Loading completed.')
     ui.wait()
     self.warp(self.map)

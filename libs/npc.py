@@ -3,9 +3,13 @@
 from ui import *
 
 List = {
-  'Weapon Dealer': {
+  'Knife Dealer': {
     'type': 'Shop',
-    'items': ['Knife', 'Cutter', 'Main Gauche']
+    'items': ['Knife', 'Cutter', 'Main Gauche', 'Dirk']
+  },
+  'Rod Dealer': {
+    'type': 'Shop',
+    'items': ['Rod', 'Wand', 'Staff', 'Arc Wand']
   },
   'Recycler': {
     'type': 'Recycler'

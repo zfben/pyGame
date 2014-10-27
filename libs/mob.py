@@ -54,7 +54,7 @@ List = {
     'atk': 19,
     'exp': 90,
     'skills': [
-      ['Heal', 30, 1]
+      ['Heal', 20, 1]
     ]
   },
   'Rocker': {
@@ -275,7 +275,7 @@ class Mob:
     self.hp = randrange(self.db['hp'], self.db['hp'] + self.lv)
     self.max_hp = self.hp
     self.exp = randrange(self.db['exp'], self.db['exp'] + self.lv)
-    self.zeny = randrange(self.exp, self.exp + self.lv)
+    self.zeny = int(randrange(self.exp, self.exp + self.lv) / 2)
     self.status = {}
 
   def mhp(self):
@@ -311,7 +311,7 @@ class Mob:
       name = source.skills.keys()[randrange(len(source.skills.keys()))]
       skill_data = [name, 0, source.skills[name]]
     if len(skill_data) > 0:
-      if skill_data[0] != 'Heal' or source.hp != source.mhp():
+      if not(skill_data[0] == 'Heal' and source.hp == source.mhp()):
         skill.use(skill_data[0], skill_data[2], source, target)
         return
 
